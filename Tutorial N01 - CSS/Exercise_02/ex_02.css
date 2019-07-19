@@ -1,0 +1,21 @@
+td {
+    border: solid blue 1px;
+}
+
+h1 {
+    border: solid blue 5px;
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#Submit {
+    color: white;
+    background: blue;
+    padding: 5px;
+    width: 80px;
+}
+
+#Gender {
+    width: 130px;
+}

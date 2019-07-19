@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" href="ex_02.css">
+        <title>H2 Computing Sign Up Form</title>
+    </head>
+    <body>
+        <h1>H2 Computing Sign Up Form</h1>
+        <form>
+        <p>Please enter your particulars below.</p>
+        <table>
+            <tr>
+            <td><label for="First Name">First Name:</label></td>
+            <td><input type="text" name="First Name" id="First Name" placeholder="First Name"/>
+            </td>
+            <td><label for="Second Name">Second Name:</label></td>
+            <td><input type="text" name="Second Name" id="Second Name" placeholder="Second Name"/>
+            </td>
+            </tr>
+            <tr>
+            <td><label for="Email">Email:</label></td>
+            <td><input type="text" name="Email" id="Email" placeholder="name@email.com"/></td>
+            <td><label for="Contact">Contact:</label></td>
+            <td><input type="text" name="Contact" id="Contact"></td>
+            </tr>
+            <tr>
+            <td><label for="Class">Class:</label></td>
+            <td><input type="text" name="Class" id="Class"></td>
+            <td><label for="Gender">Gender:</label></td>
+            <td><select id="Gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+           </select></td>
+            </tr>
+            <tr>
+            <td><label for="dob">Date of Birth:</label></td>
+            <td> <input type="date" name="dob" id="dob"/></td>
+            </tr>
+        </table>
+        
+
+        
+       
+        <p>Subject Combination</p>
+        <input type="radio" name="combi" id="PCPME" />
+        <label for="PCPME">P CP M E</label> 
+        <br />
+        <input type="radio" name="combi" id="CCPME" />
+        <label for="CCPME">C CP M E</label> 
+        <br />
+        <input type="radio" name="combi" id="other"/>
+        <label for="Other">Other: </label>
+        <input type="text" name="othercombi" id="Other"/>
+        <br />
+        <br/>
+        </form>
+        
+        <a href="ex_02_response.html"><input type="submit" id="Submit"></a>
+        
+
+
+    </body>
+</html>
