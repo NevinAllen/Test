@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/static/css/rpcalc.css" />
+    <title>My Website</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td class="navbar"><a href="{{ url_for('index') }}">Home</a></td>
+        <td class="navbar">
+          <a href="{{ url_for('about') }}">About</a>
+        </td>
+        <td class="navbar">
+          <a href="{{ url_for('rpcal') }}">RP Calculator</a>
+        </td>
+      </tr>
+    </table>
+
+    <h1>Rank Point Calculator</h1>
+    <form action="{{ url_for('rpcal') }}" method="POST">
+      <p>
+        <label for="pw"></label>
+        Do you wish to include result of PW?
+      </p>
+      <p>
+        <select name="pw" id="pw">
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+      </p>
+      <p>
+        <label for="mt">
+          Do you wish to include result of Mother Tongue Language?
+        </label>
+      </p>
+      <p>
+        <select name="mt" id="mt">
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+      </p>
+      <input type="submit" value="Update" />
+    </form>
+  </body>
+</html>

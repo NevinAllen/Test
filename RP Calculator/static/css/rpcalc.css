@@ -1,0 +1,48 @@
+.navbar {
+  border: solid black 1px;
+  width: 500px;
+  text-align: center;
+  text-underline-position: unset;
+}
+a {
+  text-decoration: none;
+}
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: red;
+}
+
+.head {
+  text-align: left;
+}
+table {
+  width: 100%;
+  align-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+select {
+  width: 100%;
+}
+
+button {
+  margin: 10px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/static/css/rpcalc.css" />
+    <title>Results</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td class="navbar"><a href="{{ url_for('index') }}">Home</a></td>
+        <td class="navbar">
+          <a href="{{ url_for('about') }}">About</a>
+        </td>
+        <td class="navbar">
+          <a href="{{ url_for('rpcal') }}">RP Calculator</a>
+        </td>
+      </tr>
+    </table>
+
+    <h1>Here is your Rank Point!</h1>
+
+    <table>
+      <tr>
+        <th align="left">Subject Name</th>
+        <th align="left">Grade</th>
+        <th align="right">RP</th>
+      </tr>
+      <tr>
+        <td class="grader">H2 Subject 1</td>
+        <td class="grader">{{ h2[0] }}</td>
+        <td align="right">{{ h21 }}</td>
+      </tr>
+      <tr>
+        <td class="grader">H2 Subject 2</td>
+        <td class="grader">{{ h2[1] }}</td>
+        <td align="right">{{ h22 }}</td>
+      </tr>
+      <tr>
+        <td class="grader">H2 Subject 3</td>
+        <td class="grader">
+          {{ h2[2] }}
+        </td>
+        <td align="right">{{ h23 }}</td>
+      </tr>
+      <tr>
+        <td class="grader">H1 Subject</td>
+        <td class="grader">
+          {{ h1[0] }}
+        </td>
+        <td align="right">{{ h11 }}</td>
+      </tr>
+      <tr>
+        <td class="grader">General Paper</td>
+        <td class="grader">
+          {{ h1[1] }}
+        </td>
+        <td align="right">{{ gp }}</td>
+      </tr>
+      {% if pw != None %}
+      <tr>
+        <td class="grader">Project Work</td>
+        <td class="grader" name="pw">{{ h1[2] }}</td>
+        <td align="right">{{ pw }}</td>
+      </tr>
+      {% else %} {% endif %} {% if mt != None %}
+      <tr>
+        <td class="grader">Mother Tongue</td>
+        <td class="grader">{{ h1[3] }}</td>
+        <td align="right">{{ mt }}</td>
+      </tr>
+      {% else %} {% endif %}
+      <tr>
+        <td>Total</td>
+        <td></td>
+        <td align="right">{{ final }}</td>
+      </tr>
+    </table>
+  </body>
+</html>
